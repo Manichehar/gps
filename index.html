@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Project</title>
+		<style type="text/css">
+			body{
+				margin:0;
+				}
+			#mainarea{
+					width:100%;
+					height:;
+					float:left;
+					margin:0 ;
+	       			}
+			.myarea{
+					width:100px;
+					}
+			#headarea{
+					width:100%;
+					height:100px;
+					background: #CE2B1C;
+					float:left;
+					position:fixed;
+					}
+			#left{
+					width:50%;
+					height:100px;
+					background: #CE2B1C;
+					float:left;
+					margin-top:10px;
+					}
+			#left p{
+					font:bolder 20px Monospace;
+					color:white;
+					}
+			#right{
+					width:50%;
+					height:100px;
+					background: #CE2B1C;
+					float:left;
+					margin-top:10px;
+					}
+			#right a img{
+					margin:20px 0;
+					}
+			#logoarea{
+					margin-top:100px;
+					width:82%;
+					height:250px;
+					background:white;
+					padding-left:18%;
+					float:left;
+					}
+			#logo{
+					width:200px;
+					height:250px;
+					float:left;
+					margin-top:10px;
+					}
+			#logo img{
+					width:150px;
+					height:150px;
+					margin:50px 0;
+					}
+			#head{
+					width:56%;
+					height:250px;
+					float:left;
+					margin:0px;					}
+			#head h1{
+					font:bolder 50px Monospace;
+					color: #CE2B1C;
+					}
+			#head p{
+					font:bold 19px arial;
+					line-height:10px;
+					}
+			#menuarea{
+					width:82%;
+					height:100px;
+					background: #CE2B1C;
+					padding-left:18%;
+					float:left;
+					}
+			#menuarea ul{
+						width:67%;
+						list-style:none;
+						//margin-top:5px;
+						}
+			#menuarea ul li{
+						float:left;
+						margin-left:20px;
+						margin-top:3px;
+						font:bolder 20px white;
+						}
+			#menuarea ul li:first-child{
+						margin-left:0px;
+						}
+			#menuarea ul li a:link,#menuarea ul li a:visited{
+					text-decoration:none;
+					color:white;
+					padding:7px;
+					display:block;
+					border:solid 1px white;
+					border-radius:10px;
+					}
+			#menuarea ul li a:hover{
+					color: #CE2B1C;
+					background:white;
+					border:solid 1px black;
+					}
+			#slidearea{
+					width:53%;
+					height:50px;
+					background:white;
+					float:left;
+					padding-left:20%;
+					}
+			#slidearea marquee a{
+					text-decoration:none;
+					color:black;
+					font:30px Monospace;
+					}
+			#slidearea marquee a:hover{
+					text-decoration:underline;
+					}
+			#picarea{
+					width:53%;
+					height:400px;
+					float:left;
+					margin-left:20%;	
+					position:static;				
+					}
+			#picarea:hover{
+					opacity:.8;
+					}
+			#darea{
+					width:53%;
+					height:1440px;
+					background:white;
+					float:left;
+					padding-left:20%;
+					}
+			#darea p{
+					font:normal 20px Monospace;
+				}
+			#darea p b{
+					color: #CE2B1C;
+					}
+			#darea h1{
+					font:600 40px Monospace;
+					color: #CE2B1C;
+					text-decoration:underline  #CE2B1C 7px;
+					}
+			#darea2{
+					float:right;
+					}
+			.figure{
+					margin-top:35px;
+					width:45%;
+					height:400px;
+					float:left;
+					}
+			.figure img{
+					opacity:1;
+					}
+			.figure img:hover{
+					opacity:.9;
+					}
+			.figure:hover{
+					border:dashed 3px  #CE2B1C;
+					}
+			#information{
+					width:100%;
+					height:420px;
+					float:left;
+					background:white;
+					margin-top:30px;
+					}
+			#info1{
+					float:left;
+					margin-right:3%;
+					margin-left:0.8%;
+				}
+			#info1 p,#info2 p,#info3 p{
+					font:bolder 20px Monospace;
+				}
+			#info2{
+					float:left;
+					margin-right:3%;
+				}
+			#info3{
+					float:left;
+				}
+			.info{
+					width:30%;
+					height:400px;
+					background:white;
+					border:solid 2px  #CE2B1C;
+					border-radius:20px;
+				}
+			.info p{
+					margin-top:0px;
+					color: #CE2B1C;
+					border-bottom:solid 5px  #CE2B1C;
+				}
+			.info:hover{
+					background:grey;
+					border:dashed 3px;
+				}
+			.info marquee ul li a{
+					color:black;
+					text-decoration:none;
+					font:bolder 20px Monospace;
+					text-align:left;
+					}
+			.info marquee ul li a:hover{
+					text-decoration:underline;
+					}
+			#footerarea{
+					width:100%;
+					height:570px;
+					background:black;
+					float:left;
+					 
+					}
+			#leftfooter{
+					margin-left:20%;		
+					}
+			.footer{
+					float:left;
+					list-style:disc url('arr.png');
+					padding:0 30px;
+					}
+			
+			.footer ul li a:link,.footer ul li a:visited{
+					font:bolder 25px Monospace;
+					color:white;
+					padding:0;
+					text-decoration:none;
+					}
+			.footer ul li a:hover{
+					padding-left:5px;
+					color: #CE2B1C;
+					}
+			#downarea{
+					width:80%;
+					height:70px;
+					float:left;
+					background:black;
+					color:white;
+					padding-left:10%;
+					 
+					}
+			#downarea h2 a{
+					font:bolder 30px Monospace;
+					color: #CE2B1C;
+					text-decoration:none;
+					}
+			
+		</style>
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="headarea">
+				<div id="left" align="center">
+					<p align="center">Opening Hours:Sunday to Friday<br/>7am to 3pm</p>	
+				</div>
+				<div id="right"  align="center">
+
+								<a href=""><img src="Whatsapp.png" width="40px" height="40px" title="Contact us at whatsapp"/></a>
+
+								<a href="https://www.youtube.com/channel/UC_ocJggEYmmALySuvXcNqmw/videos" target="blank"><img src="youtube.png" width="40px" height="40px" title="Subscribe us on youtube"/></a>
+
+								<a href=""><img src="fb.png" width="40px" height="40px" title="Join us at facebook"/></a>
+							
+								<a href="tel:9525018365"><img src="phone.png" width="40px" height="40px" title="Contact us : 9631880114"/></a>
+							
+				</div>	
+			</div>
+			<div id="logoarea" class="myarea">
+				<div id="logo">
+					<img src="gps.png"/> 
+				</div>
+				<div id="head">
+					<h1 align="center">GURUDEV PUBLIC SCHOOL BALBADDA</h1>
+					<p align="center">MEHARMA GODDA JHARKHAND</p>
+					<p align="center">Affiliated to JAC,RANCHI</p>
+					<p align="center">Estd:2008</p>
+				</div>
+			</div>	
+			<div id="menuarea" class="myarea">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="#darea">ABOUT</a></li>
+						<li><a href="#info3">ACADEMIC</a></li>
+						<li><a href="#">ADMISSION</a></li>
+						<li><a href="#info2">RESULTS</a></li>
+						<li><a href="#info1">NOTICE</a></li>
+						<li><a href="#">GALLERY</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+			</div>
+			<div id="slidearea">
+				<marquee direction="left" scrollamount="8" onmouseover="this.stop()" onmouseout="this/start()"><a href="">Admission is going on.</a></marquee>
+			</div>
+			<div id="picarea" class="myarea" align="center">
+				<image src="gpsimage.png" width="100%" height="400px"/>
+			</div>
+			<div id="darea" class="myarea">
+				<p align="justify"><b>GURUDEV PUBLIC SCHOOL BALBADDA</b> is a Co-education, English Medium school affiliated to JAC, State Board of JHARKHAND.<b>GURUDEV PUBLIC SCHOOL BALBADDA </b>was started in the year 2008 at BALBADDA to meet the educational needs of the growing villages. The school belongs to <b>Mr. ARUN KUMAR SINHA</b>. However the new campus at BALBADDA in GAJANDHA  road started in the year 2016.<b>GURUDEV PUBLIC SCHOOL BALBADDA</b> provides a congenial and aspiring environment for all round development of personality.</p>			
+				<h1 align="center">FACILITIES</h1> 
+				<div id="darea1" class="figure">
+						<img src="hostel.png" width="100%" height="100%"/>	
+				</div>
+				<div id="darea2" class="figure">
+					<img src="cctv.png" width="100%" height="100%"/>	
+				</div>
+				<div id="information">
+					<hr width="100%" color="black"/><br/>
+					<div id="info1" class="info">
+						<p align="center">Notice Board</p>
+						<marquee direction="up" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()">
+							<ul type="square">
+								<li><a href="">Holiday for Durga Puja. <img src="new.gif"/></a></li>
+								<li><a href="">Monthly Test Routine(September). <img src="new.gif"/></a></li>
+								<li><a href="">Functions for Teacher's Day. <img src="new.gif"/></a></li>
+								<li><a href="">Monthly Test Routine(August).</a></li>
+								<li><a href="">Monthly Test Routine(July).</a></li>
+							</ul>
+						</marquee>					
+					</div>
+					<div id="info2" class="info">
+						<p align="center">Results</p>
+						<marquee direction="up" scrollamount="2" onmouseover="this.stop()" onmouseout="this.start()">
+							<ul type="square">
+								<li><a href="">Monthly Test Result(August). <img src="new.gif"/></a></li>
+								<li><a href="">Monthly Test Result(July).</a></li>
+							</ul>
+						</marquee>
+					</div>
+					<div id="info3" class="info">
+						<p align="center">Academic</p>
+						<marquee direction="up" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()">
+							<ul type="none">
+								<li><a href=""></a></li>
+							</ul>
+						</marquee>
+					</div>
+				</div>
+			</div>
+			<div id="footerarea" class="myarea">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.075079155053!2d87.31449611546033!3d25.13315244046248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f06fde896969c5%3A0x9b467054cdbe98e1!2sGURUDEV%20PUBLIC%20SCHOOL!5e0!3m2!1sen!2sin!4v1662444660868!5m2!1sen!2sin" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Location</iframe>
+				<div id="leftfooter" class="footer">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="#info3">ACADEMIC</a></li>
+						<li><a href="#">ADMISSION</a></li>
+					</ul>		
+				</div>
+				<div class="footer">
+					<ul>
+						<li><a href="#info2 ">RESULTS</a></li>
+						<li><a href="#info1">NOTICE</a></li>
+						<li><a href="#">GALLERY</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>		
+				</div>
+				<div class="footer" id="contact">
+					<ul>
+						<li><a href="mailto:">EMAIL US</a></li>
+						<li><a href="#">CONTACT US</a></li>
+					</ul>		
+				</div>
+				<div id="downarea">
+					<h2 align="center">Designed & Developed By:<a href="tel:9525018365" title="Contact Chehar Mani">Chehar Mani</a></h2>	
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>
