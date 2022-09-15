@@ -12,6 +12,7 @@
 					height:;
 					float:left;
 					margin:0 ;
+					background:url('bg.png') 100% fixed;
 	       			}
 			.myarea{
 					width:100px;
@@ -19,14 +20,13 @@
 			#headarea{
 					width:100%;
 					height:100px;
-					background: #CE2B1C;
+					background:#D13E13;
 					float:left;
-					position:fixed;
 					}
 			#left{
 					width:50%;
 					height:100px;
-					background: #CE2B1C;
+					background: #D13E13;
 					float:left;
 					margin-top:10px;
 					}
@@ -37,7 +37,7 @@
 			#right{
 					width:50%;
 					height:100px;
-					background: #CE2B1C;
+					background: #D13E13;
 					float:left;
 					margin-top:10px;
 					}
@@ -45,12 +45,11 @@
 					margin:20px 0;
 					}
 			#logoarea{
-					margin-top:100px;
 					width:82%;
 					height:250px;
-					background:white;
 					padding-left:18%;
 					float:left;
+					background:#e2e2e2;
 					}
 			#logo{
 					width:200px;
@@ -61,37 +60,45 @@
 			#logo img{
 					width:150px;
 					height:150px;
-					margin:50px 0;
+					margin:35px 0px;
+					margin-left:40px;
 					}
 			#head{
-					width:56%;
+					width:60%;
 					height:250px;
 					float:left;
-					margin:0px;					}
-			#head h1{
-					font:bolder 50px Monospace;
-					color: #CE2B1C;
-					}
+					margin:10px;		
+				}
 			#head p{
 					font:bold 19px arial;
 					line-height:10px;
 					}
+			#head p:first-child{
+					margin-top:50px;
+					font:bolder 45px Monospace;
+					color:#D13E13;
+					line-height:10px;
+					}
 			#menuarea{
-					width:82%;
-					height:100px;
-					background: #CE2B1C;
-					padding-left:18%;
+					width:81%;
+					height:75px;
+					background:#D13E13;
+					padding-left:19%;
+					position:sticky;
+					top:0px;
+					z-index:1500;
 					float:left;
 					}
 			#menuarea ul{
-						width:67%;
+						//width:64%;
+						height:100%;
 						list-style:none;
-						//margin-top:5px;
+						margin-top:0px;
 						}
 			#menuarea ul li{
 						float:left;
-						margin-left:20px;
-						margin-top:3px;
+						margin-left:15px;
+						margin-top:17px;
 						font:bolder 20px white;
 						}
 			#menuarea ul li:first-child{
@@ -104,23 +111,44 @@
 					display:block;
 					border:solid 1px white;
 					border-radius:10px;
+					//transition:1s;
 					}
 			#menuarea ul li a:hover{
-					color: #CE2B1C;
+					color:#D13E13;
 					background:white;
 					border:solid 1px black;
 					}
+			#menuarea ul li ul{
+					display:none;
+					padding:0;
+					}
+			#menuarea ul li:hover ul{
+					display:block;
+					float:none;
+					border-radius:0;
+					position:absolute;
+					z-index:1000;
+					}
+			#menuarea ul li:hover ul li{
+					float:none;
+					background:#D13E13;
+					margin:0;
+					border-radius:0px;
+					}
+			#menuarea ul li:hover ul li a{
+					border-radius:0;
+					}
 			#slidearea{
 					width:53%;
-					height:50px;
+					height:30px;
 					background:white;
 					float:left;
-					padding-left:20%;
+					margin-left:20%;
 					}
 			#slidearea marquee a{
 					text-decoration:none;
 					color:black;
-					font:30px Monospace;
+					font:20px Monospace;
 					}
 			#slidearea marquee a:hover{
 					text-decoration:underline;
@@ -129,85 +157,109 @@
 					width:53%;
 					height:400px;
 					float:left;
-					margin-left:20%;	
-					position:static;				
+					margin-left:20%;
 					}
-			#picarea:hover{
-					opacity:.8;
+			#picarea img{		
+					opacity:1;
+					}
+			#picarea img:hover{
+					//opacity:.8;
+					
 					}
 			#darea{
 					width:53%;
-					height:1440px;
-					background:white;
+					height:1110px;
+					background:rgba(255,255,255,.6);
 					float:left;
-					padding-left:20%;
+					margin-left:20%;
 					}
 			#darea p{
+					background:#e2e2e2;
 					font:normal 20px Monospace;
 				}
 			#darea p b{
-					color: #CE2B1C;
+					color: #D13E13;
 					}
 			#darea h1{
 					font:600 40px Monospace;
-					color: #CE2B1C;
-					text-decoration:underline  #CE2B1C 7px;
+					color: #D13E13;
+					text-decoration:underline  #D13E13 7px;
+					}
+			#darea1{
+					float:left;
+					overflow:hidden;
+					position:relative;
 					}
 			#darea2{
-					float:right;
+					float:left;
+					overflow:hidden;
+					position:relative;
+					}
+			#darea3{
+					float:left;
+					overflow:hidden;
+					position:relative;
+				}
+			#facility{
+					width:100%;
+					height:300px;
+					background:rgba(209, 62, 19,.3);
+					float:left;
+					padding-left:0%;
 					}
 			.figure{
-					margin-top:35px;
-					width:45%;
-					height:400px;
+					border-radius:127px;
+					margin-top:25px;
+					width:254px;
+					height:254px;
 					float:left;
-					}
-			.figure img{
+					margin-left:60px;
+					overflow:hidden;
 					opacity:1;
 					}
 			.figure img:hover{
-					opacity:.9;
+					box-shadow:5px 5px 0px 0px red;
+					transform:scale(1.2,1.2);
 					}
-			.figure:hover{
-					border:dashed 3px  #CE2B1C;
+			.hoverup{
+					position:absolute;
+					bottom:20px;
+					width:100%;
+					text-align:center;
+					background:rgba(82%, 24%, 7%,0.6);
+					color:white;
+					padding:0 1px;
+					font-weight:bold;
+					font-family:Monospace;
 					}
 			#information{
 					width:100%;
-					height:420px;
+					height:380px;
 					float:left;
-					background:white;
 					margin-top:30px;
 					}
-			#info1{
-					float:left;
-					margin-right:3%;
-					margin-left:0.8%;
-				}
-			#info1 p,#info2 p,#info3 p{
-					font:bolder 20px Monospace;
-				}
-			#info2{
-					float:left;
-					margin-right:3%;
-				}
-			#info3{
-					float:left;
+			.info h2{
+					background:#D13E13;
+					margin:0;
+					border-radius:15px 15px 0 0;
+					color:white;
+					font:bolder 26px Monospace;
 				}
 			.info{
 					width:30%;
-					height:400px;
-					background:white;
-					border:solid 2px  #CE2B1C;
+					height:300px;
+					background:#e2e2e2;
+					border:solid 2px #D13E13;
 					border-radius:20px;
-				}
-			.info p{
-					margin-top:0px;
-					color: #CE2B1C;
-					border-bottom:solid 5px  #CE2B1C;
+					margin-left:20px;
+					float:left;
 				}
 			.info:hover{
-					background:grey;
-					border:dashed 3px;
+					box-shadow: 0px 0px 5px 4px #D13E13;
+				}
+			.info marquee ul{
+					height:230px;
+					width:70%;
 				}
 			.info marquee ul li a{
 					color:black;
@@ -220,45 +272,99 @@
 					}
 			#footerarea{
 					width:100%;
-					height:570px;
+					height:380px;
 					background:black;
 					float:left;
-					 
-					}
-			#leftfooter{
-					margin-left:20%;		
+					position:relative;
 					}
 			.footer{
+					width:300px;
+					height:280px;
+					z-index:1500;
 					float:left;
-					list-style:disc url('arr.png');
-					padding:0 30px;
-					}
-			
-			.footer ul li a:link,.footer ul li a:visited{
-					font:bolder 25px Monospace;
 					color:white;
-					padding:0;
-					text-decoration:none;
+					margin:50px 0;
+					margin-left:60px;
 					}
-			.footer ul li a:hover{
+			.footer:first-child{
+					margin-left:23%;
+					}
+			.footer a{
+					text-decoration:none;
+					color:white;
+					}
+			.footer p b{
+					color:#D13E13;
+					}
+			.footer ul{
+					text-align:justify;
+					width:172px;
+					list-style: url('arr.png') inside;
+					}
+			.footer ul li{
+					line-height:30px;
+					}
+			.footer ul li a{
+					text-decoration:none;
+					font:normal 20px Monospace;
+					color:white;
+					}
+			.footer ul li:hover{
 					padding-left:5px;
-					color: #CE2B1C;
+					transition:.5s;	
+					}
+			.footer ul li a:hover,.footer a:hover{
+					color:#ED8282;
+					transition:.5s;
+					}
+			.footer:last-child{
+					border-right:none;
+					}
+			#footer2{
+					width:210px;
+					//padding-top:0;
+					margin-left:50px;
+					}
+			#footerarea h3{
+					padding-left:10px;
+					color:#FF7451;
+					text-align:left;
+					font:bold 90px;
+					width:100%;
+					}
+			.footer h3{
+					border-left:solid 10px #FF7451;
 					}
 			#downarea{
-					width:80%;
-					height:70px;
+					margin:0;
+					width:100%;
+					height:62px;
 					float:left;
 					background:black;
 					color:white;
-					padding-left:10%;
-					 
+					position:sticky;
+					bottom:0;
 					}
 			#downarea h2 a{
 					font:bolder 30px Monospace;
-					color: #CE2B1C;
+					color: #D13E13;
 					text-decoration:none;
 					}
-			
+			#downarea h2 a:hover{
+					text-decoration:underline;
+					}
+			#topbutton{
+					position:fixed;
+					bottom:100px;
+					right:100px;
+					}
+			#topbutton a{
+					text-decoration:none;
+					color:#D13E13;
+					}
+			#topbutton a b{
+					font:900 25px red;
+					}
 		</style>
 	</head>
 	<body>
@@ -267,13 +373,13 @@
 				<div id="left" align="center">
 					<p align="center">Opening Hours:Sunday to Friday<br/>7am to 3pm</p>	
 				</div>
-				<div id="right"  align="center">
+				<div id="right" align="center">
 
-								<a href=""><img src="Whatsapp.png" width="40px" height="40px" title="Contact us at whatsapp"/></a>
+								<a href="#"><img src="Whatsapp.png" width="40px" height="40px" title="Contact us at whatsapp"/></a>
 
 								<a href="https://www.youtube.com/channel/UC_ocJggEYmmALySuvXcNqmw/videos" target="blank"><img src="youtube.png" width="40px" height="40px" title="Subscribe us on youtube"/></a>
 
-								<a href=""><img src="fb.png" width="40px" height="40px" title="Join us at facebook"/></a>
+								<a href="#"><img src="fb.png" width="40px" height="40px" title="Join us at facebook"/></a>
 							
 								<a href="tel:9525018365"><img src="phone.png" width="40px" height="40px" title="Contact us : 9631880114"/></a>
 							
@@ -284,7 +390,7 @@
 					<img src="gps.png"/> 
 				</div>
 				<div id="head">
-					<h1 align="center">GURUDEV PUBLIC SCHOOL BALBADDA</h1>
+					<p align="center">GURUDEV PUBLIC SCHOOL BALBADDA</p>
 					<p align="center">MEHARMA GODDA JHARKHAND</p>
 					<p align="center">Affiliated to JAC,RANCHI</p>
 					<p align="center">Estd:2008</p>
@@ -293,7 +399,13 @@
 			<div id="menuarea" class="myarea">
 					<ul>
 						<li><a href="index.html">HOME</a></li>
-						<li><a href="#darea">ABOUT</a></li>
+						<li><a href="#darea">ABOUT</a>
+							<ul type="none">	
+								<li><a href="#">About Director</a></li>
+								<li><a href="#">About Faculties</a></li>
+								<li><a href="#">About Students</a></li>
+							</ul>
+						</li>
 						<li><a href="#info3">ACADEMIC</a></li>
 						<li><a href="#">ADMISSION</a></li>
 						<li><a href="#info2">RESULTS</a></li>
@@ -303,81 +415,104 @@
 					</ul>
 			</div>
 			<div id="slidearea">
-				<marquee direction="left" scrollamount="8" onmouseover="this.stop()" onmouseout="this/start()"><a href="">Admission is going on.</a></marquee>
+				<marquee direction="left" scrollamount="8" onmouseover="this.stop()" onmouseout="this/start()"><a href=""><b>Admission is going on.<img src="new.gif"/></b></a></marquee>
 			</div>
-			<div id="picarea" class="myarea" align="center">
+			<div id="picarea" class="myarea">
 				<image src="gpsimage.png" width="100%" height="400px"/>
 			</div>
 			<div id="darea" class="myarea">
 				<p align="justify"><b>GURUDEV PUBLIC SCHOOL BALBADDA</b> is a Co-education, English Medium school affiliated to JAC, State Board of JHARKHAND.<b>GURUDEV PUBLIC SCHOOL BALBADDA </b>was started in the year 2008 at BALBADDA to meet the educational needs of the growing villages. The school belongs to <b>Mr. ARUN KUMAR SINHA</b>. However the new campus at BALBADDA in GAJANDHA  road started in the year 2016.<b>GURUDEV PUBLIC SCHOOL BALBADDA</b> provides a congenial and aspiring environment for all round development of personality.</p>			
 				<h1 align="center">FACILITIES</h1> 
-				<div id="darea1" class="figure">
-						<img src="hostel.png" width="100%" height="100%"/>	
-				</div>
-				<div id="darea2" class="figure">
-					<img src="cctv.png" width="100%" height="100%"/>	
+				<div id="facility">
+					<div id="darea1" class="figure">
+						<img src="greencampus.png" width="254px" height="254px"/>
+						<div class="hoverup">HOSTEL CAMPUS</div>
+					</div>
+					<div id="darea2" class="figure">
+						<img src="greencampus.png" width="254px" height="254px"/>
+						<div class="hoverup">SCHOOL CAMPUS</div>	
+					</div>
+					<div id="darea3" class="figure">
+						<img src="greencampus.png" width="254px" height="254px"/>
+						<div class="hoverup">CCTV </div>	
+					</div>
 				</div>
 				<div id="information">
-					<hr width="100%" color="black"/><br/>
+					<h1 align="center">NOTICES</h1>
 					<div id="info1" class="info">
-						<p align="center">Notice Board</p>
-						<marquee direction="up" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()">
-							<ul type="square">
-								<li><a href="">Holiday for Durga Puja. <img src="new.gif"/></a></li>
-								<li><a href="">Monthly Test Routine(September). <img src="new.gif"/></a></li>
-								<li><a href="">Functions for Teacher's Day. <img src="new.gif"/></a></li>
-								<li><a href="">Monthly Test Routine(August).</a></li>
-								<li><a href="">Monthly Test Routine(July).</a></li>
-							</ul>
-						</marquee>					
+						<div id="info11">
+							<h2 align="center">Notice Board</h2>
+						</div>
+						<div id="info12">
+							<marquee direction="up" scrollamount="2" onmouseover="this.stop()" onmouseout="this.start()">
+								<ul type="square">
+									<li><a href="">Holiday for Durga Puja. <img src="new.gif"/></a></li>
+									<li><a href="">Monthly Test Routine(September). <img src="new.gif"/></a></li>
+									<li><a href="">Functions for Teacher's Day. <img src="new.gif"/></a></li>
+									<li><a href="">Monthly Test Routine(August).</a></li>
+									<li><a href="">Monthly Test Routine(July).</a></li>
+								</ul>
+							</marquee>					
+						</div>
 					</div>
 					<div id="info2" class="info">
-						<p align="center">Results</p>
-						<marquee direction="up" scrollamount="2" onmouseover="this.stop()" onmouseout="this.start()">
-							<ul type="square">
-								<li><a href="">Monthly Test Result(August). <img src="new.gif"/></a></li>
-								<li><a href="">Monthly Test Result(July).</a></li>
-							</ul>
-						</marquee>
+						<div  id="info21">
+							<h2 align="center">Results</h2>
+						</div>
+						<div  id="info22">
+							<marquee direction="up" scrollamount="2" onmouseover="this.stop()" onmouseout="this.start()">
+								<ul type="square">
+									<li><a href="">Monthly Test Result(August). <img src="new.gif"/></a></li>
+									<li><a href="">Monthly Test Result(July).</a></li>
+								</ul>
+							</marquee>
+						</div>
 					</div>
 					<div id="info3" class="info">
-						<p align="center">Academic</p>
-						<marquee direction="up" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()">
-							<ul type="none">
-								<li><a href=""></a></li>
-							</ul>
-						</marquee>
+						<div id="info31">
+							<h2 align="center">Academic</h2>
+						</div>
+						<div id="info32">
+					
+						</div>			
 					</div>
 				</div>
 			</div>
-			<div id="footerarea" class="myarea">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.075079155053!2d87.31449611546033!3d25.13315244046248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f06fde896969c5%3A0x9b467054cdbe98e1!2sGURUDEV%20PUBLIC%20SCHOOL!5e0!3m2!1sen!2sin!4v1662444660868!5m2!1sen!2sin" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Location</iframe>
-				<div id="leftfooter" class="footer">
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="#">ABOUT</a></li>
-						<li><a href="#info3">ACADEMIC</a></li>
-						<li><a href="#">ADMISSION</a></li>
-					</ul>		
-				</div>
-				<div class="footer">
-					<ul>
-						<li><a href="#info2 ">RESULTS</a></li>
-						<li><a href="#info1">NOTICE</a></li>
-						<li><a href="#">GALLERY</a></li>
-						<li><a href="#">CONTACT</a></li>
-					</ul>		
-				</div>
-				<div class="footer" id="contact">
-					<ul>
-						<li><a href="mailto:">EMAIL US</a></li>
-						<li><a href="#">CONTACT US</a></li>
-					</ul>		
+			<div id="footerarea" class="myarea">	
+				<div id="foot">
+					<div id="footer1" class="footer">
+						<h3>Contact Details</h3>
+						<p><image src="add.png" width="20px"/><b> Address: </b>Balbadda, Meharma, Godda, Jharkhand, India - 814160</p>
+						<p><image src="mail.png" width="20px"//><b> Email: </b><a href="mailto:gpsbalbadda@gmail.com?subject=Query related &cc=cheharmani192004@gmail.com&body=Issues related">gpsbalbadda@gmail.com</a></p>
+						<p><image src="web.png" width="18px"//><b> Website: </b><a href="index.html">www.gpsblbda.com</a></p>
+						<p><image src="mob.png" width="15px"//><b> Mobile: </b><a href="tel:9631880114">+91 - 9631880114</a></p>
+						<br/>	
+					</div>
+					<div id="footer2" class="footer">
+						<ul type="none">
+							<h3>Quick Links</h3>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="#info3">ACADEMIC</a></li>
+							<li><a href="#">ADMISSION</a></li>
+							<li><a href="#info1">NOTICE</a></li>
+							<li><a href="#">GALLERY</a></li>
+							<li><a href="#">Student Login</a></li>
+							<li><a href="#">Teacher Login</a></li>
+						</ul>		
+					</div>
+					<div id="footer3" class="footer">
+						<h3>Location</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d869.170788969028!2d87.3162869383516!3d25.133011255419316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f06fde896969c5%3A0x9b467054cdbe98e1!2sGURUDEV%20PUBLIC%20SCHOOL!5e1!3m2!1sen!2sin!4v1663093272411!5m2!1sen!2sin" width="290" height="200" style="border:0;" allowfullscreen="" loading="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
 				</div>
 				<div id="downarea">
 					<h2 align="center">Designed & Developed By:<a href="tel:9525018365" title="Contact Chehar Mani">Chehar Mani</a></h2>	
 				</div>
+				<div id="topbutton">
+					<a href="#"><b>Go to 🔝</b>	</a>
+				</div>
 			</div>
+		
 		</div>	
 	</body>
 </html>
